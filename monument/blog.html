@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Import CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <!-- Set viewport size -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1" />
+
+    <meta charset="utf-8">
+
+    <!-- Import Font Awesome icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+
+    <!-- Import Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
+
+    <title>Monument Blog</title>
+  </head>
+
+  <body>
+    <div class = "container">
+
+      <!-- Header content -->
+      <header>
+        <!-- Navigation for larger screens and tablets -->
+        <nav>
+          <div class = "navBar">
+            <div class = "headerLinks">
+              <a href = "#">About</a>
+              <a href = "#">Gallery</a>
+              <a href = "#">Blog</a>
+              <a href = "#">Contact</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero styles -->
+        <div class = "blogHero">
+          <!-- Mobile navigation styles -->
+          <div class = "mobileNav">
+            <i class = "fas fa-bars fa-lg"></i>
+          </div>
+          <div class = "topHeadline">
+            <h1>Monument</h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- Blog page content -->
+      <div class = "contentForm">
+        <div class = "content">
+
+          <main>
+            <section class = "blogPost">
+              <h3>4/23/2018</h3>
+              <h2>A Visual Guide to the Southwest</h2>
+              <img src = "images/blog_1.jpg" alt = "Southwest Desert" />
+              <p>And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. All you have to learn here is how to have fun. A happy cloud. We'll put some happy little leaves here and there. If I paint something, I don't want to have to explain what it is. You can create anything that makes you happy. Isn't that fantastic that you can create an almighty tree that fast? And just raise cain. You create the dream - then you bring it into your world. We don't want to set these clouds on fire. We'll make some happy little bushes here. It's almost like something out of a fairytale book. Isn't that fantastic? You can just push a little tree out of your brush like that. You gotta think like a tree. We'll lay all these little funky little things in there. Fluff it up a little and hypnotize it. Work that paint. Let's put some highlights on these little trees. The sun wouldn't forget them. Work on one thing at a time. Don't get carried away - we have plenty of time.
+              </p>
+              <img src = "images/blog_2.jpg" alt = "Southwest desert at dusk" />
+              <p>This is a happy place, little squirrels live here and play. We artists are a different breed of people. We're a happy bunch. Sometimes you learn more from your mistakes than you do from your masterpieces. See how easy it is to create a little tree right in your world. I thought today we would make a happy little stream that's just running through the woods here. Now then, let's play. What the devil. If there's two big trees invariably sooner or later there's gonna be a little tree. Volunteering your time; it pays you and your whole community fantastic dividends. Don't fiddle with it all day. Even the worst thing we can do here is good. If you didn't have baby clouds, you wouldn't have big clouds. Get tough with it, get strong. Let's make some happy little clouds in our world. There comes a nice little fluffer. This painting comes right out of your heart.
+              </p>
+            </section>
+          </main>
+
+          <aside>
+            <!-- About Monument -->
+            <section class = "about">
+              <h3>About us</h3>
+              <p>There are no mistakes. You can fix anything that happens. You are only limited by your imagination. Any little thing can be your friend if you let it be. Nice little fluffy clouds laying around in the sky being lazy. Don't be afraid to make these big decisions. Once you start, they sort of just make themselves. </p>
+              <p>Automatically, all of these beautiful, beautiful things will happen. You're the greatest thing that has ever been or ever will be. You're special. You're so very special. There is no right or wrong - as long as it makes you happy and doesn't hurt anyone.</p>
+              <img src = "images/about.jpg" alt = "Monument staff at a campfire" />
+            </section>
+
+            <!-- List of recent issues -->
+            <section class = "recent">
+              <h3>Recent issues</h3>
+                <ul>
+                  <li><a href = "#">Issue Nineteen - Camping</a></li>
+                  <li><a href = "#">Issue Eighteen - Food</a></li>
+                  <li><a href = "#">Issue Seventeen - Signs</a></li>
+                  <li><a href = "#">Issue Sixteen - Friends</a></li>
+                  <li><a href = "#">Issue Fifteen - Carnivals</a></li>
+                  <li><a href = "#">Issue Fourteen - Gatherings</a></li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+
+        <!-- Comment form content -->
+        <div id = "commentForm">
+          <form action = "/path" method = "POST" id = "comment">
+           <h3>Leave a comment</h3>
+            <div class = "commentRow1">
+              <input type = "text" id = "commentName" name = "commentName" placeholder = "Name"/>
+              <input type = "email" id = "commentEmail" name = "commentEmail" placeholder = "Email"/>
+            </div>
+            <div class = "commentRow2">
+              <textarea id = "commentMessage" name = "commentMessage" placeholder = "Comment"></textarea>
+            </div>
+            <div class = "commentRow3">
+              <input type = "submit" id = "commentSubmit" name = "commentSubmit" value = "Submit"/>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <div class = "footerContent">
+          <div class = "socialLinks">
+            <a href = "#">
+              <i class = "fab fa-facebook-square fa-lg"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-twitter fa-lg"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-instagram fa-lg"></i>
+            </a>
+          </div>
+
+          <!-- Email list signup form -->
+          <form action = "/page" method = "POST" id = "listSignUp">
+            <div class = "mailListForm">
+              <input type = "email" id = "mailListEmail" name = "mailListEmail" placeholder = "Email address" />
+              <input type = "submit" id = "mailListSubmit" name = "mailListSubmit" value = "Keep in touch" />
+            </div>
+          </form>
+
+          <div class = "copyright">
+            <p>&copy; 2018 June Yoshii</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
