@@ -103,6 +103,13 @@ h1 {
 }
 
 /* Landing page content styles */
+.landingContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 main.landingMain {
   display: flex;
   flex-direction: column;
@@ -215,6 +222,41 @@ article.currentIssue h3 {
   padding-top: 1em;
 }
 
+/* Landing page contact form styles */
+#contactForm {
+  width: 80%;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+form#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRow1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input#contactName, input#contactEmail, input#contactSubject {
+  width: 30%;
+  padding-left: 1em;
+}
+
+textarea#contactMessage {
+  padding: 1em 0 0 1em;
+  height: 15em;
+}
 
 /* Blog content styles */
 .blogContent {
@@ -308,7 +350,7 @@ input#commentName, input#commentEmail {
   width: 49%;
 }
 
-textarea#commentMessage, input#commentSubmit {
+textarea, input#commentSubmit, input#contactSubmit {
   width: 100%;
 }
 

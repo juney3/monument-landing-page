@@ -40,6 +40,7 @@
         </div>
       </header>
 
+      <div class = "landingContent">
         <main class = "landingMain">
           <div class = "archiveWrapper">
             <section class = "fromArchive">
@@ -75,7 +76,6 @@
             </section>
           </div>
 
-
           <section class = "aboutMonument">
             <h3>About the Magazine</h3>
             <h4>A lifestyle magazine crafted with love</h4>
@@ -109,22 +109,24 @@
           </section>
         </main>
 
-      <div id = "contactForm">
-        <form action = "/path" method = "POST" id = "contact">
-         <h3>Get in touch</h3>
-          <div class = "formRow1">
-            <input type = "text" id = "contactName" name = "contactName" placeholder = "Full Name"/>
-            <input type = "email" id = "contactEmail" name = "contactEmail" placeholder = "Email"/>
-            <input type = "text" id = "contactSubject" name = "contactSubject" placeholder = "Subject"/>
-          </div>
-          <div class = "formRow2">
-            <textarea id = "contactMessage" name = "contactMessage" placeholder = "Message"></textarea>
-          </div>
-          <div class = "formRow3">
-            <input type = "submit" id = "contactSubmit" name = "contactSubmit" value = "Submit"/>
-          </div>
-        </form>
+        <div id = "contactForm">
+          <form action = "/path" method = "POST" id = "contact">
+           <h3>Get in touch</h3>
+            <div class = "formRow1">
+              <input type = "text" id = "contactName" name = "contactName" placeholder = "Full Name"/>
+              <input type = "email" id = "contactEmail" name = "contactEmail" placeholder = "Email"/>
+              <input type = "text" id = "contactSubject" name = "contactSubject" placeholder = "Subject"/>
+            </div>
+            <div class = "formRow2">
+              <textarea id = "contactMessage" name = "contactMessage" placeholder = "Message"></textarea>
+            </div>
+            <div class = "formRow3">
+              <input type = "submit" id = "contactSubmit" name = "contactSubmit" value = "Submit"/>
+            </div>
+          </form>
+        </div>
       </div>
+
 
       <footer>
         <div class = "footerContent">
@@ -144,7 +146,7 @@
           <form action = "/page" method = "POST" id = "listSignUp">
             <div class = "mailListForm">
               <input type = "email" id = "mailListEmail" name = "mailListEmail" placeholder = "Email address" />
-              <input type = "submit" id = "mailListSubmit" name = "mailListSubmit" value = "Keep in touch" />
+              <input type = "submit" id = "mailListSubmit" name = "mailListSubmit" value = "Subscribe" />
             </div>
           </form>
 
