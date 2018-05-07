@@ -515,13 +515,17 @@ input#mailListSubmit {
     flex-direction: column;
   }
 
+  .landingHero {
+    justify-content: flex-start;
+  }
+  
   .mobileNav {
     height: 10%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .topHeadline {
