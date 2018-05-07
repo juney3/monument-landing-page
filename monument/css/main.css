@@ -297,6 +297,10 @@ aside section, aside img {
   margin: 2em 0;
 }
 
+aside img {
+  width: 100%;
+}
+
 .recent ul {
   padding-left: .75em;
   margin-left: .75em;
@@ -518,7 +522,7 @@ input#mailListSubmit {
   .landingHero {
     justify-content: flex-start;
   }
-  
+
   .mobileNav {
     height: 10%;
     width: 100%;
