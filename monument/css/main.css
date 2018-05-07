@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, a, input, textarea {
+h1, h2, h3, h4, h5, a, input, textarea, button {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -59,19 +59,35 @@ header {
 }
 
 /* Hero styles*/
-.blogHero {
-  height: 20em;
-  width: 100%;
+/* General hero styles*/
+.hero {
   margin-top: 4em;
-  background-image: url("../images/blog_header_bg.jpg");
+  width: 100%;
   background-size: cover;
   background-position: center bottom;
   background-color: #5e818e;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Landing hero styles*/
+.landingHero {
+  height: 45em;
+  background-image: url("../images/home_header_bg.jpg");
+}
+
+.landingHero h3 {
+  color: #FFFFFF;
+  letter-spacing: .2em;
+}
+
+/* Blog hero styles*/
+.blogHero {
+  height: 20em;
+  background-image: url("../images/blog_header_bg.jpg");
 }
 
 /* Mobile navigation section*/
@@ -86,8 +102,80 @@ h1 {
   margin: 0;
 }
 
-/* Main page content styles */
-.content {
+/* Landing page content styles */
+main.landingMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.archiveWrapper {
+  width: 90%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section.fromArchive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.issues {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article.backIssue {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article.backIssue img {
+  width: 100%;
+  height: auto;
+}
+
+article.backIssue p {
+  text-align: center;
+  font-size: .7em;
+}
+
+article.backIssue button {
+  width: 10em;
+}
+
+section.aboutMonument {
+  width: 90%;
+  margin-top: 4em;
+  background-color: #C6F1F5;
+  padding: 6em 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.aboutMonument h3 {
+  margin: 0;
+}
+
+section.aboutMonument p {
+  text-align: center;
+  font-size: .8em;
+}
+
+/* Blog content styles */
+.blogContent {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -95,11 +183,11 @@ h1 {
   margin: 0 auto;
 }
 
-main {
+main.blogMain {
   width: 63%;
 }
 
-main img {
+main.blogMain img {
   width: 100%;
 }
 
@@ -128,7 +216,7 @@ aside section, aside img {
 }
 
 /* General form styles */
-input, textarea {
+input, textarea, button {
   font-size: .7em;
   color: #515151;
   border: 1px solid #515151;
@@ -136,7 +224,20 @@ input, textarea {
   margin: 0;
 }
 
-/* Comment form styles */
+input[type = submit], button {
+  background-color: inherit;
+  transition: color 1s, border 2s, box-shadow linear 2s;
+}
+
+input[type = submit]:hover, input[type = submit]:focus,
+button:hover, button:focus {
+  background-color: #515151;
+  color: #FFFFFF;
+  border-color: #BDC3C7;
+  box-shadow: 0 0 10px #BDC3C7;
+}
+
+/* Blog page comment form styles */
 #commentForm {
   display: flex;
   flex-direction: row;
@@ -178,10 +279,6 @@ input#commentName, input#commentEmail, textarea#commentMessage {
   padding-left: 1em;
 }
 
-input#commentSubmit {
-  transition: color 1s, border 2s, box-shadow linear 2s;
-}
-
 .commentRow1 {
   display: flex;
   flex-direction: row;
@@ -190,7 +287,7 @@ input#commentSubmit {
 
 /* Footer styles */
 footer {
-  background-color: #B9EEF7;
+  background-color: #C6F1F5;
   margin-top: 3em;
   height: 15.6em;
   display: flex;
@@ -247,15 +344,6 @@ input#mailListEmail {
 input#mailListSubmit {
   border: .1em solid #515151;
   width: 30%;
-  background-color: inherit;
-  transition: color 1s, border 2s, box-shadow linear 2s;
-}
-
-input#mailListSubmit:hover, input#mailListSubmit:focus, input#commentSubmit:hover, input#commentSubmit:focus {
-  background-color: #515151;
-  color: #FFFFFF;
-  border-color: #BDC3C7;
-  box-shadow: 0 0 10px #BDC3C7;
 }
 
 /* Copyright statement styles */
