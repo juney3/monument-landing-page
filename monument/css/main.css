@@ -109,6 +109,7 @@ main.landingMain {
   align-items: center;
 }
 
+/* Landing page back issues section styles */
 .archiveWrapper {
   width: 90%;
   margin-top: 2em;
@@ -154,6 +155,7 @@ article.backIssue button {
   width: 10em;
 }
 
+/* Landing page about section styles*/
 section.aboutMonument {
   width: 90%;
   margin-top: 4em;
@@ -173,6 +175,46 @@ section.aboutMonument p {
   text-align: center;
   font-size: .8em;
 }
+
+/* Landing page current issue styles */
+section.thisMonth {
+  width: 80%;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+article.currentIssue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article.currentIssue h3 {
+  margin: 0;
+}
+
+.currentIssueContent {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.galleryColumn {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.galleryColumn img {
+  width: 100%;
+  height: auto%;
+  padding-top: 1em;
+}
+
 
 /* Blog content styles */
 .blogContent {
