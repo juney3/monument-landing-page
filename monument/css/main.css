@@ -144,13 +144,21 @@ article.backIssue {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 article.backIssue img {
   width: 100%;
   height: auto;
+}
+
+.backIssueHeader {
+  height: 4em;
+}
+
+article.backIssue h5 {
+  text-align: center;
 }
 
 article.backIssue p {
@@ -160,6 +168,7 @@ article.backIssue p {
 
 article.backIssue button {
   width: 10em;
+  margin-top: 2em;
 }
 
 /* Landing page about section styles*/
@@ -249,7 +258,7 @@ form#contact {
 }
 
 input#contactName, input#contactEmail, input#contactSubject {
-  width: 30%;
+  width: 32%;
   padding-left: 1em;
 }
 
